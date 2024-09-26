@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone Style Notes App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Notes</h1>
+        </header>
+        <main>
+            <div id="loading" style="display: none;">Loading notes...</div>
+            <div class="note-input-container">
+                <input type="text" id="noteInput" placeholder="Enter a new note">
+                <button id="addNoteBtn" onclick="window.addNote()">
+                    <img src="icons/add-icon.svg" alt="Add" />
+                </button>
+            </div>
+            <ul id="notesList"></ul>
+        </main>
+    </div>
+
+    <!-- Link to the external JS file -->
+    <script type="module" src="app.js"></script>
+</body>
+</html>

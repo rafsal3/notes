@@ -1,0 +1,124 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #F9F9F9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+header {
+    background-color: #F1F1F1;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #E2E2E2;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 500px; /* Set a fixed height for the main content */
+}
+
+.note-input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#noteInput {
+    flex: 1;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background-color: #F7F7F7;
+    font-size: 16px;
+    outline: none;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+#addNoteBtn {
+    background-color: #007AFF;
+    border: none;
+    padding: 12px;
+    margin-left: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#addNoteBtn img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Notes list */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    overflow-y: auto; /* Allow scrolling for the list */
+    overflow-x: hidden;
+}
+
+/* Hide scrollbar */
+ul::-webkit-scrollbar {
+    width: 0; /* Hide the scrollbar */
+}
+ul {
+    -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #FFF;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+
+li:last-child {
+    margin-bottom: 0;
+}
+
+li button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+li button img {
+    width: 20px;
+    height: 20px;
+}
+
+li:hover {
+    background-color: #f2f2f2;
+}
